@@ -1,0 +1,279 @@
+.articles-bar
+    &__container
+        display: grid
+        grid-template: min-content repeat(4, 1fr) / repeat(4, 1fr)
+        grid-gap: 30px
+        padding: 30px 0 58px
+    &__top-articles
+        border-radius: 10px
+        overflow-x: hidden
+        background-color: $grey-95
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 25px 25px 5px
+        &-item
+            display: flex
+            align-items: center
+            justify-content: space-between
+            flex-basis: 25%
+            margin-bottom: 25px
+            &:not(:last-child)::after
+                content: ""
+                height: 75px
+                width: 1px 
+                background-color: $grey-85
+                margin: 0 25px
+    &__large-article
+        background-color: $white
+        background-image: url(../assets/images/car.png)
+        background-repeat: no-repeat
+        background-position: top 15px right
+
+#top-block
+    grid-row-start: 1
+    grid-row-end: 2
+    grid-column-start: 1
+    grid-column-end: 5
+#large-article_first
+    grid-row-start: 2
+    grid-row-end: 4
+    grid-column-start: 1
+    grid-column-end: 3
+#medium-article
+    &_first 
+        grid-row-start: 2
+        grid-row-end: 4
+        grid-column-start: 3
+        grid-column-end: 4
+    &_second
+        grid-row-start: 4
+        grid-row-end: 6
+        grid-column-start: 1
+        grid-column-end: 2
+    &_third
+        grid-row-start: 3
+        grid-row-end: 5
+        grid-column-start: 4
+        grid-column-end: 5
+#small-article
+    &_first 
+        grid-row-start: 2
+        grid-row-end: 3
+        grid-column-start: 4
+        grid-column-end: 5
+    &_second
+        grid-row-start: 4
+        grid-row-end: 5
+        grid-column-start: 2
+        grid-column-end: 3
+    &_third
+        grid-row-start: 4
+        grid-row-end: 5
+        grid-column-start: 3
+        grid-column-end: 4       
+    &_fourth
+        grid-row-start: 5
+        grid-row-end: 6
+        grid-column-start: 2
+        grid-column-end: 3
+    &_fifth
+        grid-row-start: 5
+        grid-row-end: 6
+        grid-column-start: 3
+        grid-column-end: 4
+    &_sixth
+        grid-row-start: 5
+        grid-row-end: 6
+        grid-column-start: 4
+        grid-column-end: 5
+.top-articles-item
+    &:not(:last-child)
+        flex-basis: 30%
+    &__img
+        width: 65px
+        height: 65px
+        object-fit: cover
+    &__content
+        @include medium-bold-text
+        color: $white
+        margin-right: 15px
+.large-article
+    border-radius: 10px
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    min-height: 370px
+    height: auto
+    &__article-preview
+        display: flex
+        flex-direction: column
+        padding-top: 35px
+        padding-left: 35px
+    &__category
+        margin-bottom: 20px
+        display: block
+    &__title
+        margin-bottom: 27px
+        text-align: left
+        max-width: 238px
+    &__description
+        max-width: 228px
+        @include medium-regular-text
+        color: $grey-85
+        text-align: left
+        margin: 0
+        margin-bottom: 10px
+    &__author-block
+        padding: 11px 25px 10px 35px
+        display: flex
+        align-items: center 
+        flex-direction: row
+        border-top: 1px solid $grey-15
+    &__author-info
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        width: 100%
+    &__author-name
+        margin-right: 5px
+        max-width: 100px
+        text-align: left
+    &__author-text
+        align-items: center
+        @include medium-regular-text
+        @include text-overflow
+        max-width: 285px
+        max-height: 20px
+        color: $grey-85
+        margin: 0
+        margin-right: 15px
+        text-align: left
+    &__comment-tag
+        margin-left: auto
+        height: 20px
+.medium-article
+    display: flex   
+    flex-direction: column
+    border-radius: 10px
+    overflow: hidden
+    background-color: $white
+    height: auto
+    min-height: 370px
+    &_popular
+        padding: 19px 22px 25px 24px  
+        background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../assets/images/block4-2.jpg)
+        background-size: cover
+        background-repeat: no-repeat
+        justify-content: space-between
+    &__label
+        margin-bottom: 117px
+    &__category
+        margin-bottom: 23px 
+        display: block   
+    &__title
+        &_popular
+            margin-bottom: 25px
+            text-align: left
+        &_tags
+            padding: 20px 25px 19px
+            border-bottom: 1px solid $grey-15
+            text-align: left
+    &__image_simple
+        height: 275px
+        object-fit: cover
+        width: 100%
+    &__content_simple
+        padding: 10px 25px 25px
+.tags
+    display: flex
+    flex-wrap: wrap
+    padding: 23px 25px 15px
+.tag
+    align-items: center
+    text-align: center
+    @include medium-bold-text
+    color: $grey-100
+    padding: 4px 14px
+    border: 1px solid $grey-15
+    border-radius: 5px
+    margin-bottom: 15px
+    &:not(:last-child)
+        margin-right: 10px
+.small-article  
+    border-radius: 10px
+    overflow: hidden
+    display: flex
+    height: auto
+    min-height: 170px
+    &_check-list 
+        background-color: $bluegreen-75
+        background-image: url(../assets/icons/File.svg)
+        background-repeat: no-repeat
+        background-position: top 23px right 23px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    &__content_check-list
+        padding: 25px 25px 16px
+
+    &_light
+        background-color: $white
+    &_social-links
+        background-color: $white
+    &__article-preview
+        padding: 24px 24px 30px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: space-between
+        min-height: 170px
+        &-info
+            display: flex
+            flex-direction: column
+            margin-bottom: 10px
+    &__download
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 100%
+        padding: 13px 0 12px
+        border-top: 1px solid #D9DADB
+    &_social-links
+        padding: 30px 25px 25px
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__title_headline-4
+        margin: 0 auto 25px
+        text-align: center
+    &__social-links
+        justify-content: center
+        align-items: center
+    &__social-link
+        &:not(:last-child)
+            margin-right: 20px
+    &__description
+        margin: 0
+        @include medium-regular-text
+        color: $grey-85   
+        text-align: left
+    &__title_headline-5
+        margin-bottom: 5px 
+        @include text-overflow
+        max-width: 213px
+        max-height: 25px   
+        text-align: left
+.download
+    &__image
+        margin-right: 10px
+    &__text
+        @include medium-bold-text
+        color: $white
+        text-align: center
+
+.title_check-list
+    margin-bottom: 10px
+    text-align: left
+

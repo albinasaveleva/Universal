@@ -1,0 +1,456 @@
+*
+    box-sizing: border-box
+    -webkit-tap-highlight-color: transparent
+body
+    background-color: $color-5
+span
+    display: block
+.body_scrollles
+    overflow-y: hidden
+.container
+        max-width: 1140px
+        margin: 0 auto
+.h1_hidden
+    display: none
+a
+    text-decoration: none
+    cursor: pointer
+    outline: none
+    display: block
+    &:active
+        cursor: pointer
+        outline: none
+    &:hover
+        cursor: pointer
+        outline: none
+    &:focus
+        cursor: pointer
+        outline: none
+.button
+    cursor: pointer
+    border: none
+    outline: none
+    &:active
+        border: none
+        outline: none
+        cursor: pointer
+    &:hover
+        border: none
+        outline: none
+        cursor: pointer
+    &:focus
+        border: none
+        outline: none
+        cursor: pointer
+    &_blue
+        border-radius: 20px
+        background-color: $blue-75
+        color: $white
+        padding: 10px 20px
+        @include medium-bold-text
+        width: min-content
+        display: flex
+        align-items: center
+        max-width: 250px
+        min-width: 140px
+        &>span
+            max-width: 210px
+            @include text-overflow
+            text-align: center
+            margin: 0 auto
+    &_up
+        position: fixed
+        bottom: 50px
+        right: 50px
+        z-index: 9
+.burger-menu
+    cursor: pointer
+    &:active 
+        cursor: pointer
+    &:hover
+        cursor: pointer
+    &:focus
+        cursor: pointer
+.recommendation
+    display: flex
+    flex-direction: column
+    background-color: $white
+    border-radius: 10px
+    overflow: hidden
+    &__title
+        padding: 20px 25px
+        background-color: $white
+    &__block
+        display: flex
+        flex-direction: column
+        padding: 17px 25px
+        background-color: $white
+        border-top: 1px solid $grey-15
+        &:hover
+            cursor: pointer
+    &__button
+        padding: 11px 0 14px
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%
+        @include medium-bold-text
+        color: $grey-100
+        text-align: center
+.block
+    &__title
+        margin-bottom: 8px
+        @include category
+        &_bluegreen-75
+            color: $bluegreen-75
+        &_greenblue-75
+            color: $greyblue-75
+        &_purple-75
+            color: $purple-75
+        &_orange-75
+            color: $orange-75
+        &_green-75
+            color: $green-75
+    &__text
+        @include medium-regular-text
+        color: $grey-85
+        margin: 0
+        &_cut-3
+
+    &__content
+        display: flex
+        flex-direction: column
+.author
+    &-block
+        display: flex
+        align-items: center
+    &-avatar
+        border-radius: 50%
+        margin-right: 10px
+        object-fit: cover
+        &_small
+            width: 30px
+            height: 30px
+        &_medium
+            width: 45px
+            height: 45px
+        &_large
+            width: 90px
+            height: 90px
+    &-info
+        display: flex
+        flex-direction: column
+    &-name
+        &_regular
+            @include medium-regular-text
+            margin-bottom: 2px
+        &_light
+            color: $white
+            mix-blend-mode: normal
+            opacity: 0.85
+        &_headline-4
+            @include headline-4
+        &_dark
+            color: $grey-100
+        &_grey
+            color: $grey-85
+        &_bold
+            @include medium-bold-text
+    &-profession
+        &_regular
+            @include small-regular-text
+        &_medium-regular
+            @include medium-regular-text
+        &_light
+            color: $white
+            opacity: 0.4
+        &_dark
+            color: $grey-85
+        &_grey
+            color: $grey-50
+.title
+    &_headline-1
+        @include headline-1
+        color: $white
+    &_headline-2
+        @include headline-2
+    &_headline-3
+        @include headline-3
+        color: $grey-100
+    &_headline-4
+        @include headline-4
+    &_headline-5
+        @include headline-5
+        color: $grey-100
+        &_light
+            color: $white
+    &_headline-5-uppercase
+        @include headline-5-uppercase
+        color: $white
+    &_headline-6-uppercase
+        @include headline-6-uppercase
+        color: $grey-100
+.headline-2_light
+    color: $white  
+.subtitle
+    @include medium-regular-text
+    &_light
+        color: $white
+.category
+    @include category
+    text-align: left
+    &_blue-75
+        color: $blue-75
+    &_greyblue-75
+        color: $greyblue-75
+    &_purple-25
+        color: $purple-25
+    &_red-75
+        color: $red-75
+    &_bluegreen-75
+        color: $bluegreen-75
+.label
+    padding: 5px 12px
+    color: $white
+    text-align: center
+    @include small-regular-text
+    width: min-content
+    &_green
+        background-color: $green-75
+.info-block
+    display: flex
+    flex-wrap: wrap
+.date-tag
+    display: flex
+    align-items: center
+    flex-wrap: nowrap
+    margin-right: 6px
+
+        
+.date
+    @include small-regular-text
+    &_light
+        color: $white
+        mix-blend-mode: normal
+        opacity: 0.4
+    &_grey
+        color: $grey-50
+.comment-tag
+    display: flex
+    align-items: center
+    flex-wrap: nowrap
+    margin-right: 6px
+
+.eye-tag
+    display: flex
+    align-items: center
+    flex-wrap: nowrap
+    margin-right: 6px
+.eye-count
+    align-items: center
+    @include small-regular-text
+    color: $grey-50
+    &_light
+        color: $white
+        mix-blend-mode: normal
+        opacity: 0.4
+    &__grey
+        color: $grey-50
+
+.comment-count
+    align-items: center
+    @include small-regular-text
+    color: $grey-50
+    &_light
+        color: $white
+        mix-blend-mode: normal
+        opacity: 0.4
+    &_grey
+        color: $grey-50
+    &_dark
+        color: $grey-100
+.like-tag
+    display: flex
+    flex-wrap: nowrap
+    align-items: center
+    height: 20px
+    margin-right: 7px
+
+.like-count
+    align-items: center
+    @include small-regular-text
+    color: $grey-50
+    &_light
+        color: $white
+        opacity: 0.4
+    &__grey
+        color: $grey-50
+.thumb-count
+    @include small-bold-text
+    color: $grey-50
+    margin: 0 10px
+    &_positive
+        color: $green-75
+    &_negative
+        color: $red-75
+.social-links
+    display: flex
+.social-link
+    border-radius: 50%
+    width: 50px
+    height: 50px
+    display: flex
+    justify-content: center
+    align-items: center
+    &_fb
+        background-color: $social-networks_facebook
+    &_twit
+        background-color: $social-networks_twitter
+    &_yt
+        background-color: $social-networks_youtube
+    &_inst
+        background-color: $social-networks_instagram
+.icon
+    &_arrow
+        height: 20px
+        width: 20px
+        fill: $white
+        margin-left: 5px
+    &_arrow-up
+        height: 40px
+        width: 40px
+        fill: $grey-15
+        transform: rotate(90deg)
+        fill-opacity: 0.5
+    &_comment
+        &_dark
+            fill: $grey-30
+            width: 15px
+            height: 15px
+            margin-right: 5px
+        &_light
+            fill: $white
+            fill-opacity: 0.4
+            width: 15px
+            height: 15px
+            margin-right: 5px
+
+    &_heart
+        &_light
+            fill: $white
+            fill-opacity: 0.4
+            width: 15px
+            height: 15px
+            margin-right: 5px
+        &_dark
+            fill: $grey-30
+            width: 15px
+            height: 15px
+            margin-right: 5px
+    &_download
+        width: 20px
+        height: 20px
+        fill: $white 
+        margin-right: 10px
+    &_facebook
+        width: 20px
+        height: 20px
+        fill: $white 
+    &_twitter
+        width: 20px
+        height: 20px
+        fill: $white 
+    &_youtube
+        width: 20px
+        height: 20px
+        fill: $white 
+    &_instagram
+        width: 20px
+        height: 20px
+        fill: $white  
+    &_bookmark
+        &_small
+            width: 20px
+            height: 18px
+            fill: $grey-30
+        &_large
+            width: 30px
+            height: 27px
+            fill: $white
+            fill-opacity: 0.4
+        &_red
+            fill: $red-75
+    &_images
+        width: 20px
+        height: 20px
+        fill: $white
+        margin-right: 8px
+    &_close
+        width: 20px
+        height: 20px
+        fill: $grey-30
+    &_clock
+        &_light
+            fill: $white
+            fill-opacity: 0.4
+            width: 15px
+            height: 15px 
+            margin-right: 5px 
+    &_arrow
+        &-prev
+            width: 60px
+            height: 60px
+            fill: $white
+            fill-opacity: 0.4
+        &-next
+            width: 60px
+            height: 60px
+            fill: $white
+            fill-opacity: 0.4   
+    &_heart-2
+        width: 20px
+        height: 20px
+        fill: $white
+    &_arrow-left
+        height: 20px
+        width: 20px
+        fill: $white
+        margin-right: 5px
+    &_home
+        height: 17px
+        width: 18px
+        fill: $white
+        margin-right: 5px   
+    &_eye
+        height: 15px
+        width: 15px
+        fill: $grey-30
+        margin-right: 5px 
+    &_pensil
+        width: 20px
+        height: 20px
+        fill: $grey-30  
+        margin-right: 10px
+    &_loading
+        height: 15px
+        width: 15px
+        fill: $grey-50
+        margin-right: 5px 
+        
+    &_thumb
+        height: 15px
+        width: 15px
+        fill: $grey-30
+        margin-right: 5px
+.link-wrapper_center
+    display: flex
+    align-items: center    
+.thankyou-block
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    margin-bottom: 40px
+    &__title
+        margin-bottom: 20px
+        color: $grey-100

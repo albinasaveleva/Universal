@@ -1,0 +1,73 @@
+.main-screen
+    position: relative
+    &::after
+        content: ""
+        position: absolute
+        top: -1px
+        left: 0
+        right: 0
+        height: 475px
+        background-color: $grey-100
+        z-index: -1
+    &__container
+        border-radius: 10px
+        padding-top: 28px
+        overflow: hidden
+        display: flex
+    &__article
+        flex-basis: 77%
+        width: 100%
+        border-radius: 10px 0 0 10px 
+        overflow: hidden
+        &_1
+            background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../assets/images/card-img.jpg)
+            background-repeat: no-repeat
+            background-size: cover
+        &_2
+            background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../assets/images/card-img2.jpg)
+            background-repeat: no-repeat
+            background-size: cover
+        &_3
+            background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../assets/images/card-img3.jpg)
+            background-repeat: no-repeat
+            background-size: cover
+        &_4
+            background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../assets/images/card-img4.jpg)
+            background-repeat: no-repeat
+            background-size: cover
+        &_5
+            background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../assets/images/card-img5.jpg)
+            background-repeat: no-repeat
+            background-size: cover
+    &__recommendation
+        flex-basis: 23%
+        border-radius: 0 10px 10px 0
+        order: 2
+    &__article-wrapper
+        display: flex
+        flex-direction: column
+        padding: 55px 55px 100px
+        height: 100%
+        justify-content: space-between
+    &__article-preview
+        display: flex
+        flex-direction: column
+    &__category
+        margin-bottom: 22px    
+    &__title_headline-2
+        margin-bottom: 49px
+.recommendation__block_fix
+    height: 100px
+    width: 263px
+    &:last-child
+        height: 110px
+.main-screen__article.main-screen__article_active
+    display: block
+.main-screen__article
+    display: none
+.recommendation__block_active   
+    background-color: $grey-05
+    cursor: pointer
+
+
+    

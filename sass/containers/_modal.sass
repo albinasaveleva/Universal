@@ -1,0 +1,161 @@
+.modal
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background: rgba(40, 47, 54, 0.8)
+    z-index: 10
+    &_hidden
+            display: none
+    &-dialog
+        height: 530px
+        width: 360px
+        border-radius: 10px
+        background-color: $white
+        position: fixed
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        padding: 30px 35px 40px
+        &_hidden
+            display: none
+        &_scrolling
+            overflow-y: auto
+    
+    &__title
+        margin-bottom: 25px
+    &__button_blue
+        padding: 10px 25px
+    &__input-wrapper
+        width: 290px
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        position: relative
+        &_theme
+            height: 65px
+            margin-bottom: 15px
+            width: 100%
+        &_email
+            height: 65px
+            margin-bottom: 15px
+            width: 100%
+        &_message
+            height: 145px
+            margin-bottom: 15px
+            width: 100%
+        &_checkbox
+            width: 290px
+            height: 50px
+            display: flex
+            flex-direction: column
+            position: relative
+            cursor: pointer
+
+#message_feedback-error
+    color: red
+    font-size: 10px
+    line-height: 15px
+    margin-bottom: 0
+    position: absolute
+    top: 145px 
+    width: 100%
+#theme_feedback-error
+    color: red
+    font-size: 10px
+    line-height: 15px
+    margin-bottom: 0
+    position: absolute
+    top: 65px 
+    width: 100%
+#email_feedback-error
+    color: red
+    font-size: 10px
+    line-height: 15px
+    margin-bottom: 0
+    position: absolute
+    top: 65px 
+    width: 100%
+#agreement_checkbox-error
+    color: red
+    font-size: 10px
+    line-height: 15px
+    margin-bottom: 0
+    position: absolute
+    top: 20px 
+.form
+    &_modal
+        display: flex
+        flex-direction: column
+        position: relative
+.label-title_regular
+    @include medium-regular-text
+    color: $grey-85
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: flex-start
+    margin-bottom: 30px
+    cursor: pointer
+label
+    display: flex
+    flex-direction: column
+    @include medium-bold-text
+    color: $grey-100
+    border: none
+    margin-bottom: 16px
+.select_modal
+    border-radius: 5px
+    height: 40px
+    width: 100%
+    background-color: inherit
+    border: 1px solid $grey-15
+    color: $grey-50
+    padding: 10px 10px
+    margin-top: 5px
+    outline: none
+    cursor: pointer
+.option_modal
+    border-radius: 5px
+    height: 40px
+    background-color: inherit
+    border: 1px solid $grey-15
+    color: $grey-50
+    padding: 10px 15px
+    cursor: pointer
+.textarea_modal
+    border-radius: 5px
+    background-color: inherit
+    border: 1px solid $grey-15
+    color: $grey-50
+    padding: 10px 15px
+    margin-top: 5px
+    outline: none
+    width: 100%
+    height: 120px
+    resize: none
+.input_modal
+    border-radius: 5px
+    height: 40px
+    width: 100%
+    background-color: inherit
+    border: 1px solid $grey-15
+    color: $grey-50
+    padding: 10px 15px
+    margin-top: 5px
+    outline: none
+.checkbox_modal
+    height: 20px
+    width: 20px
+    margin-right: 10px
+
+.icon_close
+    position: absolute
+    top: 17px
+    right: 17px 
+    cursor: pointer
+    &:hover
+        cursor: pointer
+    &:focus
+        cursor: pointer

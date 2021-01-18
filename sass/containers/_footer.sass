@@ -1,0 +1,121 @@
+.footer
+    background-color: $white
+    &__container
+        padding: 60px 0 40px
+        display: flex
+        flex-direction: column
+        align-items: center
+        &_thankyou
+            padding-top: 100px
+    &__nav
+        display: flex
+        margin-bottom: 64px
+    &__title
+        margin-bottom: 25px
+        text-align: center
+    &__links
+        padding: 28px 0
+        border-top: 1px solid $grey-15
+        border-bottom: 1px solid $grey-15
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 100%
+    &__logo
+        margin-right: 28px
+    &__title_headline-6-uppercase
+        &:not(:last-child)
+            margin-right: 30px
+    &__info
+        margin-right: auto
+        display: flex
+    &__social-link
+        width: 40px
+        height: 40px
+        &:not(:last-child)
+            margin-right: 15px
+    &__copyright
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        width: 100%
+        padding-top: 40px
+    &__input-wrapper
+        width: 313px
+        position: relative
+        margin-bottom: 30px
+        margin-right: 10px
+.copyright
+    &-info
+        max-width: 750px
+        @include medium-regular-text
+        color: $grey-50
+        text-align: left
+        margin: 0
+    &-text
+        @include medium-regular-text
+        color: $grey-50
+        text-align: right
+        margin: 0
+.nav-block
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    width: 195px
+    padding-top: 30px
+    &__title
+        @include medium-bold-text
+        color: $grey-100
+        margin-bottom: 25px
+    &__item
+        @include medium-regular-text
+        color: $grey-85
+        &:not(:last-child)
+            margin-bottom: 15px
+    &_news
+        border-top: 5px solid $red-75
+    &_articles
+        border-top: 5px solid $purple-75
+    &_video-lessons
+        border-top: 5px solid $blue-75
+    &_courses
+        border-top: 5px solid $orange-75
+    &_info
+        border-top: 5px solid $green-75
+    &_categories
+        border-top: 5px solid $greyblue-75
+        width: 165px
+.form
+    &_subscription
+        margin-bottom: 40px
+        display: flex
+        flex-wrap: wrap
+        align-items: flex-start
+        justify-content: center
+#email_subscription-error
+    width: 100%
+    color: red
+    font-size: 10px
+    line-height: 15px
+    margin-bottom: 0
+    position: absolute
+    top: 40px
+.input
+    &_subscription
+        width: 100%
+        height: 40px
+        padding: 10px 13px
+        border-radius: 5px
+        border: 1px solid $grey-15
+        outline: none
+        color: $grey-50
+        @include medium-regular-text
+        &:active
+            outline: none
+        &:focus
+            outline: none
+        &:hover
+            outline: none
+.button
+    &_subscription
+        padding: 10px 25px

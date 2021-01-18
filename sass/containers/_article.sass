@@ -1,0 +1,466 @@
+.body_light
+    background-color: $white
+.article-title-block
+    background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75)), url(../assets/images/article-title-bg.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    &__container
+        padding: 58px 96px 70px
+        position: relative
+    &__content
+        position: relative
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: space-between
+        margin-top: 50px        
+    &__title_headline-1
+        margin-bottom: 15px
+        max-width: 750px
+    &__description
+        @include large-regular-text
+        color: $white
+        margin-bottom: 40px
+        max-width: 635px
+    &__info-block
+        display: flex
+        align-items: center
+    &__like-tag
+        margin-right: 20px
+    &__date-tag
+        margin-right: 23px
+    &__comment-tag
+        margin-right: 20px
+    &__icon_bookmark_large
+        position: absolute
+        top: 20px
+        left: -96px
+    &__top
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-wrap: wrap
+    &__navigation
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        &-arrows
+            display: flex
+            flex-wrap: nowrap
+            align-items: center
+            margin-left: 30px
+
+    &__arrow-left-tag
+        margin-right: 25px
+    
+.article-content
+    &__container
+        padding-top: 60px
+        position: relative
+        margin-bottom: 47px
+    &__above-slider
+        display: grid
+        grid-template-columns: 624px 60px 264px
+        grid-template-rows: repeat(5, min-content)
+        padding: 0 96px
+    &__under-slider
+        display: grid
+        grid-template-columns: 624px 60px 264px
+        grid-template-rows: repeat(10, min-content)
+        padding: 0 96px
+    &__author-block
+        position: absolute
+        top: -100px
+        right: 97px
+        padding-top: 33px
+        border: 1px solid $grey-15
+        background-color: $white
+        display: flex
+        flex-direction: column
+        width: 263px
+        border-radius: 10px
+        &-wrapper
+            display: flex
+            flex-direction: column
+            align-items: center
+    &__author-info
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__author-name
+        margin-bottom: 5px
+        text-align: center
+    &__article-count
+        @include medium-bold-text
+        color: $grey-100
+        margin-top: 15px
+        margin-bottom: 20px
+        text-align: center
+    &__author-page
+        border-top: 1px solid $grey-15
+        padding: 15px 0
+        @include medium-bold-text
+        color: $grey-100
+        width: 100%
+        margin: 0 auto
+        text-align: center
+    &__author-avatar
+        margin-right: 0
+        margin-bottom: 15px
+    &__text
+        grid-column: 1/2
+        margin: 0
+        @include large-regular-text
+        color: $grey-85
+        padding: 17px 0
+    &__swiper-container
+        height: min-content
+        width: 100%
+        margin-top: 42px
+        margin-bottom: 30px
+        border-radius: 10px
+        overflow: hidden
+        border: 1px solid $grey-15
+        position: relative
+    &__swiper-slide
+        width: 100%
+    &__slide
+        width: 100%
+    &__slide-img
+        height: 555px
+        width: 100%
+        object-fit: cover
+    &__intro
+        grid-column: 1/2
+        margin-bottom: 30px
+    &__title_headline-3
+        grid-column: 1/2
+        padding: 15px 0
+    &__quote
+        grid-column: 1/2
+        @include headline-3
+        position: relative
+        z-index: 2
+        margin-top: 62px
+        margin-bottom: 30px
+        &::before
+            content: ""
+            background-image: url(../assets/icons/Quote.svg)
+            background-repeat: no-repeat
+            position: absolute
+            display: block
+            width: 70px
+            height: 70px
+            top: -20px
+            left: -20px
+            z-index: -1
+    &__tags
+        flex-direction: row
+        grid-column: 1/2
+        padding: 0
+        margin-top: 26px
+        margin-bottom: 44px
+        border: none
+    &__bottom-block
+        border-top: 1px solid $grey-15
+        padding: 30px 0
+        grid-column: 1/2
+    &__swiper-button-prev
+        position: absolute
+        top: 248px
+        left: 3%
+        z-index: 1
+    &__swiper-button-next
+        position: absolute
+        top: 248px
+        right: 3%
+        z-index: 1   
+    &__materials
+        height: min-content
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        grid-column: 3/4
+        grid-row: 1/4
+        margin-top: 150px
+    &__icon_heart-2
+        margin-right: 8px
+    &__icon_facebook
+        margin-right: 8px
+    &__icon_twitter
+        margin-right: 8px
+.intro__text
+    margin: 0
+    @include large-regular-text
+    color: $grey-85
+.float-letter
+    font-family: Lato
+    font-size: 100px
+    line-height: 75px
+    text-align: center
+    color: $blue-75
+    float: left
+    margin-right: 11px
+    padding-top: 13px
+    margin-left: -5px
+.bottom-block
+    &__title_headline-3
+        margin-bottom: 25px
+    &__buttons
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+    &__button_blue
+        display: flex
+        align-items: center
+        margin-bottom: 15px
+        &:not(:last-child)
+            margin-right: 16px
+    &__img_read-more
+        margin-right: 8px
+    &__images-count
+        margin-left: 8px
+.slide-description
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+    padding: 12px 30px 12px 35px
+    position: relative
+    margin-top: -4px
+    &__text
+        @include medium-regular-text
+        color: $grey-85
+        height: 100%
+        display: flex
+        align-items: center
+        width: 77%
+    &__author-block
+        width: 18.7%
+        display: flex
+        margin-left: 15px
+.slide-description-divider
+    position: absolute
+    width: 0.5px
+    top: 0
+    bottom: 0
+    left: 77%
+    background-color: $grey-15
+.material-block
+    display: flex
+    flex-direction: column
+    width: 263px
+    &__image
+        width: 100%
+        height: 180px
+        border-radius: 10px
+        overflow: hidden
+        margin-bottom: 10px
+        object-fit: cover
+    &__title_headline-5
+        margin-bottom: 7px
+    &__title_headline-4
+        margin-bottom: 20px
+    &__description
+        margin: 0
+        @include medium-regular-text
+        color: $grey-85
+        margin-bottom: 10px
+    &__info
+        display: flex
+        margin-top: 10px
+        align-items: center
+    &__eye-tag
+        margin-right: 10px
+.more-articles
+    background-color: $grey-05
+    &__container
+        padding: 60px 0
+        display: flex
+        flex-wrap: wrap      
+        flex-direction: row
+        align-items: flex-start
+        justify-content: space-between
+    &__material-block
+        min-height: 305px
+.article-2-title-block
+    background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75)), url(../assets/images/article-title-bg-2.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+.article-3-title-block
+    background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75)), url(../assets/images/article-title-bg-3.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+.home 
+    @include medium-regular-text
+    color: $white
+    &-tag
+        display: flex
+        align-items: center
+        flex-wrap: nowrap
+.arrow-left 
+    @include medium-regular-text
+    color: $white
+    &-tag
+        display: flex
+        align-items: center
+.arrow 
+    @include medium-regular-text
+    color: $white
+    &-tag
+        display: flex
+        align-items: center
+.comments-block
+    &__container
+        padding: 30px 293px 30px 96px
+    &__top
+        padding: 60px 0 28px
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        &-wrapper
+            display: flex
+            align-items: baseline
+    &__title 
+        margin-right: 10px
+    &__comment-count
+        color: $grey-50
+        font-family: Lato
+        font-style: normal
+        font-weight: 400
+        font-size: 40px
+        line-height: 50px
+        align-items: center
+        text-transform: uppercase
+    &__button_add-comment
+        margin-left: auto
+        border: 1px solid $grey-15
+        display: flex
+        align-items: center
+        padding: 10px 20px
+        @include medium-bold-text
+        color: $grey-100
+        border-radius: 20px
+        &:hover
+            border: 1px solid $grey-15
+            border-radius: 20px
+        &:active
+            border: 1px solid $grey-15
+            border-radius: 20px
+
+    &__comment-block
+        border-top: 1px solid $grey-15
+        padding: 20px 0 29px
+        &_hidden
+            display: none
+    &__add-comment
+        min-height: 290px
+        max-width: 750px
+        background-color: $grey-05
+        border-radius: 10px
+        display: flex
+        flex-direction: column
+        padding: 30px 40px 35px 30px
+    
+        
+.comment-block
+    &__comment
+        display: flex
+        align-items: flex-start
+        &_answer
+            padding-left: 90px
+            display: flex
+            align-items: flex-start
+
+.comment
+    &__author-avatar
+        width: 75px
+        height: 75px
+        margin-right: 15px
+        object-fit: cover
+    &__author-info
+        flex-direction: row   
+        align-items: baseline
+        margin-bottom: 13px
+    &__content-text
+        @include large-regular-text
+        color: $grey-85 
+        display: flex
+        margin-bottom: 13px 
+    &__content-tags
+        display: flex
+        align-items: center   
+.author-name_headline-5
+    @include headline-5
+    color: $grey-100
+    margin-right: 10px
+.answer-btn
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    margin-right: 15px
+.thumbs
+    display: flex
+    align-items: center
+    flex-wrap: nowrap
+.button_loading
+    color: $grey-100
+    @include medium-bold-text
+    padding: 15px 25px
+    width: 100%
+    border-radius: 25px
+    border: 1px solid $grey-15
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 60px
+    &:hover
+        border: 1px solid $grey-15
+    &:active
+        border: 1px solid $grey-15
+.add-comment
+    &__title
+        margin-left: 97px
+        margin-bottom: 15px
+        text-align: left
+    &__author-avatar
+        width: 75px
+        height: 75px
+        margin-right: 22px
+    &__comment-block
+        display: flex
+        align-items: flex-start
+.textarea_comment
+    height: 130px
+    width: 584px
+    background-color: $white
+    border: 1px solid $grey-15
+    resize: none
+    border-radius: 5px
+    margin-bottom: 12px
+    outline: none
+    padding: 10px
+    @include large-regular-text
+    color: $grey-85
+.textarea_comment-wrapper
+    position: relative
+    &::after
+        content: ""
+        width: 13px
+        height: 13px
+        background-color: $white
+        border-top: 1px solid $grey-15
+        border-left: 1px solid $grey-15
+        transform: rotate(-45deg)
+        position: absolute
+        top: 30px
+        left: -7.5px
+#comment_text-error
+    color: red
+    font-size: 10px
+    line-height: 15px
+    margin-bottom: 0
+    position: absolute
+    top: 130px 
+    width: 100%

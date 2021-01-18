@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Universal</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <a href="index.html"><img src="assets/images/logo-white.png" alt="logo" class="header__logo"><h1 class="h1_hidden">Universal</h1></a>
+            <nav class="header__nav nav">
+                <a href="#" class="header__nav-item nav-item nav-item_light">Статьи</a>
+                <a href="#" class="header__nav-item nav-item nav-item_light">Новости</a>
+                <a href="#" class="header__nav-item nav-item nav-item_light">Курсы</a>
+                <a href="#" class="header__nav-item nav-item nav-item_light" translate="no">HTML</a>
+                <a href="#" class="header__nav-item nav-item nav-item_light" translate="no">CSS</a>
+                <a href="#" class="header__nav-item nav-item nav-item_light" translate="no">JavaScript</a>
+                <a href="#" class="header__nav-item nav-item nav-item_light" translate="no">Web Design</a>
+            </nav>
+            <form class="header__search">
+                <input type="text" class="header__search-input" placeholder="Поиск">
+                <button class="header__search-button button"></button>
+            </form>
+            <div class="burger-menu header__burger-menu">
+                <div class="burger-menu__line burger-menu__line_dark"></div>
+                <div class="burger-menu__line burger-menu__line_dark"></div>
+                <div class="burger-menu__line burger-menu__line_dark"></div>
+            </div>
+        </div>
+        <div class="mobile-menu mobile-menu_hidden">
+            <div class="mobile-menu__container container">
+                <div class="mobile-menu__top">
+                    <a href="index.html"><img src="assets/images/logo-white.png" alt="logo" class="mobile-menu__logo"></a>
+                    <div class="mobile-menu__burger-menu mobile-menu__burger-menu_hidden burger-menu">
+                        <div class="burger-menu__line burger-menu__line_dark"></div>
+                        <div class="burger-menu__line burger-menu__line_dark"></div>
+                        <div class="burger-menu__line burger-menu__line_dark"></div>
+                    </div>
+                </div>
+                <div class="mobile-menu__bottom">
+                    <form class="mobile-menu__search">
+                        <input type="text" class="mobile-menu__search-input" placeholder="Поиск">
+                        <button class="mobile-menu__search-button button"></button>
+                    </form>
+                    <nav class="mobile-menu__nav nav">
+                        <a href="#" class="mobile-menu__nav-item nav-item nav-item_light">Статьи</a>
+                        <a href="#" class="mobile-menu__nav-item nav-item nav-item_light">Новости</a>
+                        <a href="#" class="mobile-menu__nav-item nav-item nav-item_light">Курсы</a>
+                        <a href="#" class="mobile-menu__nav-item nav-item nav-item_light" translate="no">HTML</a>
+                        <a href="#" class="mobile-menu__nav-item nav-item nav-item_light" translate="no">CSS</a>
+                        <a href="#" class="mobile-menu__nav-item nav-item nav-item_light" translate="no">JavaScript</a>
+                        <a href="#" class="mobile-menu__nav-item nav-item nav-item_light" translate="no">Web Design</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-screen">
+        <div class="main-screen__container container">
+            <div class="main-screen__article ">
+                <div class="main-screen__article-wrapper article-wrapper">
+                    <a class="link-wrapper">
+                        <div  class="main-screen__author-block author-block">
+                            <img src="assets/images/user.jpg" alt="avatar" class="author-avatar author-avatar_medium">
+                            <div class="author-info">
+                                <span class="author-name author-name_regular author-name_light">Давид Гуров</span>
+                                <span class="author-profession author-profession_regular author-profession_light">Разработчик</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="main-screen__article-preview article-preview">
+                        <a class="link-wrapper">
+                            <span class="main-screen__category category category_blue-75" translate="no">Javascript</span>
+                        </a>
+                        <h2 class="title main-screen__title_headline-2 title_headline-2 headline-2_light">Расширение Chrome<br>защищает от атак</h2>
+                        <a href="article.html" class="button button_blue">
+                            <span>Читать далее</span>
+                            <svg class="icon icon_arrow">
+                                <use xlink:href="assets/icons/sprite.svg#Arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-screen__article  main-screen__article_active main-screen__article_1">
+                <div class="main-screen__article-wrapper article-wrapper">
+                    <a class="link-wrapper">
+                        <div  class="main-screen__author-block author-block">
+                            <img src="assets/images/user.jpg" alt="avatar" class="author-avatar author-avatar_medium">
+                            <div class="author-info">
+                                <span class="author-name author-name_regular author-name_light">Давид Гуров</span>
+                                <span class="author-profession author-profession_regular author-profession_light">Разработчик</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="main-screen__article-preview article-preview">
+                        <a class="link-wrapper">
+                            <span class="main-screen__category category category_blue-75" translate="no">Javascript</span>
+                        </a>
+                        <h2 class="title main-screen__title_headline-2 title_headline-2 headline-2_light">Расширение Chrome<br>защищает от атак</h2>
+                        <a href="article.html" class="button button_blue">
+                            <span>Читать далее</span>
+                            <svg class="icon icon_arrow">
+                                <use xlink:href="assets/icons/sprite.svg#Arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-screen__article main-screen__article_2">
+                <div class="main-screen__article-wrapper article-wrapper">
+                    <a class="link-wrapper">
+                        <div  class="main-screen__author-block author-block">
+                            <img src="assets/images/user.jpg" alt="avatar" class="author-avatar author-avatar_medium">
+                            <div class="author-info">
+                                <span class="author-name author-name_regular author-name_light">Давид Гуров</span>
+                                <span class="author-profession author-profession_regular author-profession_light">Разработчик</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="main-screen__article-preview article-preview">
+                        <a class="link-wrapper">
+                            <span class="main-screen__category category category_purple-25" translate="no">HTML</span>
+                        </a>
+                        <h2 class="title main-screen__title_headline-2 title_headline-2 headline-2_light">5 полезных онлайн-сервисов для разработчиков</h2>
+                        <a href="article.html" class="button button_blue">
+                            <span>Читать далее</span>
+                            <svg class="icon icon_arrow">
+                                <use xlink:href="assets/icons/sprite.svg#Arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-screen__article main-screen__article_3">
+                <div class="main-screen__article-wrapper article-wrapper">
+                    <a class="link-wrapper">
+                        <div  class="main-screen__author-block author-block">
+                            <img src="assets/images/user.jpg" alt="avatar" class="author-avatar author-avatar_medium">
+                            <div class="author-info">
+                                <span class="author-name author-name_regular author-name_light">Давид Гуров</span>
+                                <span class="author-profession author-profession_regular author-profession_light">Разработчик</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="main-screen__article-preview article-preview">
+                        <a class="link-wrapper">
+                            <span class="main-screen__category category category_red-75" translate="no">WEB DESIGN</span>
+                        </a>
+                        <h2 class="title main-screen__title_headline-2 title_headline-2 headline-2_light">15 важных навыков у фрилансеров</h2>
+                        <a href="article.html" class="button button_blue">
+                            <span>Читать далее</span>
+                            <svg class="icon icon_arrow">
+                                <use xlink:href="assets/icons/sprite.svg#Arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-screen__article main-screen__article_4">
+                <div class="main-screen__article-wrapper article-wrapper">
+                    <a class="link-wrapper">
+                        <div  class="main-screen__author-block author-block">
+                            <img src="assets/images/user.jpg" alt="avatar" class="author-avatar author-avatar_medium">
+                            <div class="author-info">
+                                <span class="author-name author-name_regular author-name_light">Давид Гуров</span>
+                                <span class="author-profession author-profession_regular author-profession_light">Разработчик</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="main-screen__article-preview article-preview">
+                        <a class="link-wrapper">
+                            <span class="main-screen__category category category_blue-75" translate="no">CSS</span>
+                        </a>
+                        <h2 class="title main-screen__title_headline-2 title_headline-2 headline-2_light">10 рекомендаций начинающему веб-разработчику</h2>
+                        <a href="article.html" class="button button_blue">
+                            <span>Читать далее</span>
+                            <svg class="icon icon_arrow">
+                                <use xlink:href="assets/icons/sprite.svg#Arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-screen__article main-screen__article_5">
+                <div class="main-screen__article-wrapper article-wrapper">
+                    <a class="link-wrapper">
+                        <div  class="main-screen__author-block author-block">
+                            <img src="assets/images/user.jpg" alt="avatar" class="author-avatar author-avatar_medium">
+                            <div class="author-info">
+                                <span class="author-name author-name_regular author-name_light">Давид Гуров</span>
+                                <span class="author-profession author-profession_regular author-profession_light">Разработчик</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="main-screen__article-preview article-preview">
+                        <a class="link-wrapper">
+                            <span class="main-screen__category category category_blue-75" translate="no">JavaScript</span>
+                        </a>
+                        <h2 class="title main-screen__title_headline-2 title_headline-2 headline-2_light">10 самых популярных сайтов написанных на Django</h2>
+                        <a href="article.html" class="button button_blue">
+                            <span>Читать далее</span>
+                            <svg class="icon icon_arrow">
+                                <use xlink:href="assets/icons/sprite.svg#Arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>     
+            <div class="main-screen__recommendation recommendation">
+                <span class="recommendation__title title_headline-6-uppercase">
+                    Рекомендуем 
+                </span>
+                <a class="block recommendation__block recommendation__block_fix recommendation__block_active">
+                    <span class="block__title block__title_bluegreen-75" translate="no">css</span>
+                    <p class="block__text text_cut-2">Как использовать CSS float после того, как вышел Flexbox</p>
+                </a>
+                <a class="block recommendation__block recommendation__block_fix">
+                    <span class="block__title block__title_greenblue-75" translate="no">javascript</span>
+                    <p class="block__text text_cut-2">На каком стандарте писать скрипты, если я фрилансер</p>
+                </a>
+                <a class="block recommendation__block recommendation__block_fix">
+                    <span class="block__title block__title_purple-75" translate="no">html</span>
+                    <p class="block__text text_cut-2">Правильно вставляем картинку на сайт для Retina дисплея</p>
+                </a>
+                <a class="block recommendation__block recommendation__block_fix">
+                    <span class="block__title block__title_orange-75" translate="no">Web design</span>
+                    <p class="block__text text_cut-2">ТОП-10 плагинов для Figma</p>
+                </a>
+                <a class="block recommendation__block recommendation__block_fix">
+                    <span class="block__title block__title_green-75" translate="no">CSS</span>
+                    <p class="block__text text_cut-2">Возможности CSS Grid Layout , которые уже можно применять</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="articles-bar">
+        <div class="container articles-bar__container">
+            <div class="articles-bar__top-articles" id="top-block">
+                    <a href="article.html" class="articles-bar__top-articles-item top-articles-item">
+                        <span class="top-articles-item__content">25 способов настроить&nbsp;слайдер </span>
+                        <img src="assets/images/block.jpg" alt="image" class="top-articles-item__img" loading="lazy">
+                    </a>
+                    <a href="article.html" class="articles-bar__top-articles-item top-articles-item">
+                        <span class="top-articles-item__content">Главные фишки фрилансера</span>
+                        <img src="assets/images/block2.jpg" alt="image" class="top-articles-item__img" loading="lazy">
+                    </a>
+                    <a href="article.html" class="articles-bar__top-articles-item top-articles-item">
+                        <span class="top-articles-item__content">Техника управления временем&nbsp;“Помодоро”</span>
+                        <img src="assets/images/block3.jpg" alt="image" class="top-articles-item__img" loading="lazy">
+                    </a>
+                    <a href="article.html" class="articles-bar__top-articles-item top-articles-item">
+                        <span class="top-articles-item__content">Что нужно знать о Git и&nbsp;GitHub</span>
+                        <img src="assets/images/block4.jpg" alt="image" class="top-articles-item__img" loading="lazy">
+                    </a>
+            </div>
+            <div class="articles-bar__large-article large-article" id="large-article_first">
+                <div class="large-article__article-preview">
+                    <a class="link-wrapper">
+                        <span class="large-article__category category category_greyblue-75">Статьи</span>
+                    </a>
+                    <a href="article.html" class="link-wrapper">
+                        <h3 class="large-article__title title_headline-3 headline-3_dark title_cut-3">Вам предложили работу мечты, но вы не можете... </h3>
+                    </a>
+                    <a href="article.html" class="link-wrapper">
+                        <p class="large-article__description">Как поступить, если хочется пойти на работу мечты, но она находится в другом городе. У вас семья и переезжать вы не готовы. </p>
+                    </a>   
+                </div>
+                    <div class="large-article__author-block author-block">
+                        <a class="link-wrapper">
+                            <img src="assets/images/user2.jpg" alt="avatar" class="author-avatar author-avatar_small" loading="lazy">
+                        </a>
+                        <div class="large-article__author-info">
+                            <a class="link-wrapper">
+                                <span class="author-name large-article__author-name author-name_dark author-name_bold">Инна Квашова:</span>
+                            </a>
+                            <p class="large-article__author-text">
+                                Каждый разработчик мечтает переехать в...
+                            </p>
+                            <a class="comment-tag large-article__comment-tag">
+                                    <svg class="icon icon_comment_dark">
+                                        <use xlink:href="assets/icons/sprite.svg#Comment"></use>
+                                    </svg>
+                                <span class="comment-count">342</span>
+                            </a>                        
+                        </div>
+                    </div>
+            </div>
+            <div class="medium-article medium-article_popular" id="medium-article_first">
+                <div class="label medium-article__label label_green">Популярное</div>
+                <div class="medium-article__article-preview article-preview">
+                    <a class="link-wrapper">
+                        <span class="medium-article__category category category_purple-25" translate="no">Web design</span>
+                    </a>
+                    <a href="article.html" class="link-wrapper">
+                        <h5 class="medium-article__title_popular title_headline-5-uppercase headline-5_light">Где взять реальные проекты для портфолио</h5>
+                    </a>
+                </div>
+                <div class="medium-article__author-block author-block">
+                    <a class="link-wrapper">
+                        <img src="assets/images/user2.jpg" alt="avatar" class="author-avatar author-avatar_medium" loading="lazy">
+                    </a>
+                    <div class="author-info">
+                        <a class="link-wrapper">
+                            <span class="author-name author-name_regular author-name_light">Сара Женникова</span>
+                        </a>
+                        <div class="info-block">
+                            <div class="date-tag medium-article__date-tag">
+                                <span class="date date_light">25 сентября</span>
+                            </div>
+                            <a class="comment-tag">
+                                    <svg class="icon icon_comment_light">
+                                        <use xlink:href="assets/icons/sprite.svg#Comment"></use>
+                                    </svg>
+                                <span class="comment-count comment-count_light">16</span>
+                            </a>
+                            <a class="like-tag">
+                                    <svg class="icon icon_heart_light">
+                                        <use xlink:href="assets/icons/sprite.svg#Heart"></use>
+                                    </svg>
+                                <span class="like-count like-count_light">832</span>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="articles-bar__small-article small-article small-article_check-list" id="small-article_first">
+                <div class="small-article__content_check-list">
+                    <a class="link-wrapper">
+                        <h5 class="title_check-list title_headline-5 title_headline-5_light">Чек-лист сдачи верстки вашему заказчику</h5>
+                    </a>
+                    <span class="subtitle subtitle_light">
+                        PDF, 125 Мб
+                    </span>
+                </div>
+                    <a class="small-article__download download">
+                            <svg class="icon icon_download">
+                                <use xlink:href="assets/icons/sprite.svg#Download"></use>
+                            </svg>
+                            <span class="download__text">Скачать</span>
+                    </a>
+            </div>
+            <div class="articles-bar__small-article small-article small-article_light" id="small-article_second">
+                <div class="small-article__article-preview">
+                    <div class="small-article__article-preview-info">
+                        <a href="article.html" class="link-wrapper">
+                            <h5 class="small-article__title_headline-5 title_headline-5">Удачные референсы</h5>
+                        </a>
+                        <a href="article.html" class="link-wrapper">
+                            <p class="small-article__description description_cut-3">Как выбрать подходящие исходники, если вы ищите идею для интерфейса</p>
+                        </a>
+                    </div>
+                    <div class="date-tag">
+                        <span class="date date_grey">15 октября</span>
+                    </div>
+                </div> 
+            </div>
+            <div class="articles-bar__small-article small-article small-article_light" id="small-article_third">
+                <div class="small-article__article-preview">
+                    <div class="small-article__article-preview-info">
+                        <a href="article.html" class="link-wrapper">
+                            <h5 class="small-article__title_headline-5 title_headline-5">Заказчики — мудаки?</h5>
+                        </a>
+                        <a href="article.html" class="link-wrapper">
+                            <p class="small-article__description description_cut-3">Как защититься от бесконечных правок на этапе сдачи проекта</p>
+                        </a>
+                    </div>
+                    <div class="date-tag">
+                        <span class="date date_grey">20 октября</span>
+                    </div> 
+                </div> 
+            </div>
+            <div class="articles-bar__small-article small-article small-article_light" id="small-article_fourth">
+                <div class="small-article__article-preview">
+                    <div class="small-article__article-preview-info">
+                        <a href="article.html" class="link-wrapper">
+                            <h5 class="small-article__title_headline-5 title_headline-5">Работа без стресса — это...</h5>
+                        </a>
+                        <a href="article.html" class="link-wrapper">
+                            <p class="small-article__description description_cut-3">Обустройте свое рабочее место так, чтобы не испытывать раздражение от скрипучего... </p>
+                        </a>
+                    </div>
+                    <div class="date-tag">
+                        <span class="date date_grey">26 октября</span>
+                    </div>
+                </div> 
+            </div>
+            <div class="articles-bar__small-article small-article small-article_light" id="small-article_fifth">
+                <div class="small-article__article-preview">
+                    <div class="small-article__article-preview-info">
+                        <a href="article.html" class="link-wrapper">
+                            <h5 class="small-article__title_headline-5 title_headline-5">Бесплатные методы...</h5>
+                        </a>
+                        <a href="article.html" class="link-wrapper">
+                            <p class="small-article__description description_cut-3">Как не платить за софт, если у вас есть студенческий билет высшего учебного заведения</p>
+                        </a>
+                    </div>
+                    <div class="date-tag">
+                        <span class="date date_grey">13 октября</span>
+                    </div>
+                </div> 
+            </div>
+            <div class="articles-bar__small-article small-article small-article_social-links" id="small-article_sixth">
+                <h4 class="small-article__title_headline-4 title_headline-4">Наши соцсети</h4>
+                <div class="small-article__social-links social-links">
+                    <a href="https://www.facebook.com/" class="small-article__social-link social-link social-link_fb" target="_blank">
+                        <svg class="icon icon_facebook">
+                            <use xlink:href="assets/icons/sprite.svg#Facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/" class="small-article__social-link social-link social-link_twit" target="_blank">
+                        <svg class="icon icon_twitter">
+                            <use xlink:href="assets/icons/sprite.svg#Twitter"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/" class="small-article__social-link social-link social-link_yt" target="_blank">
+                        <svg class="icon icon_youtube">
+                            <use xlink:href="assets/icons/sprite.svg#YouTube"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="medium-article medium-article_simple" id="medium-article_second">
+                <a href="article.html" class="link-wrapper">
+                    <img src="assets/images/block5.jpg" alt="image" class="medium-article__image_simple"  loading="lazy">
+                </a>
+                <div class="medium-article__content_simple">
+                    <a href="article.html" class="link-wrapper">
+                        <h5 class="title_headline-5">
+                            20+ инструментов<br>для js-разработчика
+                        </h5>
+                    </a>                   
+                </div>
+            </div>
+            <div class="medium-article medium-article_tags" id="medium-article_third">
+                <span class="medium-article__title_tags title_headline-6-uppercase">теги</span>
+                <div class="tags">
+                    <a href="#" class="tag" translate="no">Forest</a>
+                    <a href="#" class="tag" translate="no">Hover tag</a>
+                    <a href="#" class="tag" translate="no">Nature</a>
+                    <a href="#" class="tag" translate="no">Recreation</a>
+                    <a href="#" class="tag" translate="no">Tent</a>
+                    <a href="#" class="tag" translate="no">Fresh air</a>
+                    <a href="#" class="tag" translate="no">Summer</a>
+                    <a href="#" class="tag" translate="no">Mountains</a>
+                    <a href="#" class="tag" translate="no">Wood</a>
+                    <a href="#" class="tag" translate="no">Map</a>
+                    <a href="#" class="tag" translate="no">Sun</a>
+                    <a href="#" class="tag" translate="no">Wild animals</a>
+                    <a href="#" class="tag" translate="no">Night</a>
+                </div>
+                   
+            </div>
+        </div>
+    </div>
+    <div class="dividor-block">
+        <div class="container dividor-block__container">
+            <h2 class="dividor-block__title title_headline-2 headline-2_light">
+                Расследование недели: сколько<br>зарабатывает веб разработчик в Москве
+            </h2>
+            <a href="article.html" class="button button_blue">
+                <span>Читать статью</span>    
+                <svg class="icon icon_arrow">
+                    <use xlink:href="assets/icons/sprite.svg#Arrow"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="articles-list">
+        <div class="container articles-list__container">
+            <div class="articles-list__list">
+                <div class="articles-list__article-preview article-preview">
+                    <a href="article.html" class="link-wrapper_center">
+                        <img src="assets/images/block6.jpg" alt="image" class="articles-list__image"  loading="lazy">
+                    </a>
+                    <div class="articles-list__content-block content-block">
+                        <div class="articles-list__content content">
+                            <div class="content__top">
+                                <a class="link-wrapper">
+                                    <span class="articles-list__category category category_blue-75">Новости</span>
+                                </a>
+                                <a class="link-wrapper_center">
+                                    <svg class="icon icon_bookmark_small icon_bookmark">
+                                        <use xlink:href="assets/icons/sprite.svg#Bookmark"></use>
+                                    </svg>
+                                </a>                               
+                            </div> 
+                            <a href="article.html" class="link-wrapper">
+                                <h4 class="articles-list__title title_headline-4 title_cut-2">Новый налоговый режим для фрилансеров — налог на проф. доход</h4>
+                            </a>
+                            <a href="article.html" class="link-wrapper">
+                                <p class="articles-list__description description_cut-3">Руководитель налоговой заявил, что этот режим “поможет выйти из тени” тем, кто работает неофициально. Разобрались, как работает режим и кому он подходит, а кому нет.</p>
+                            </a>
+                        </div>
+                        <div class="author-info">
+                            <div class="info-block">
+                                <div class="date-tag articles-list__date-tag">
+                                    <span class="date date_grey">6 августа</span>
+                                </div>
+                                <a class="comment-tag articles-list__comment-tag">
+                                        <svg class="icon icon_comment icon_comment_dark">
+                                            <use xlink:href="assets/icons/sprite.svg#Comment"></use>
+                                        </svg>
+                                    <span class="comment-count comment-count_grey">342</span>
+                                </a>
+                                <a class="like-tag">
+                                        <svg class="icon icon_heart icon_heart_dark">
+                                            <use xlink:href="assets/icons/sprite.svg#Heart"></use>
+                                        </svg>
+                                    <span class="like-count like-count_grey">830</span>
+                                </a> 
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                <div class="articles-list__article-preview article-preview">
+                    <a href="article.html" class="link-wrapper_center">
+                        <img src="assets/images/block7.jpg" alt="image" class="articles-list__image"  loading="lazy">
+                    </a>
+                    <div class="articles-list__content-block">
+                        <div class="articles-list__content content">
+                            <div class="content__top">
+                                <a class="link-wrapper">
+                                    <span class="articles-list__category category category_bluegreen-75">Мнения</span>
+                                </a>
+                                <a class="link-wrapper_center">
+                                    <svg class="icon icon_bookmark_small icon_bookmark icon_bookmark_red">
+                                        <use xlink:href="assets/icons/sprite.svg#Bookmark"></use>
+                                    </svg>
+                                </a>                               
+                            </div>
+                            <a href="article.html" class="link-wrapper">
+                                <h4 class="articles-list__title title_headline-4 title_cut-2">Платные курсы — это не быстрый способ выйти на нужный уровень</h4>
+                            </a>
+                            <a href="article.html" class="link-wrapper">
+                                <p class="articles-list__description description_cut-3">Среди новичков распространено мнение, что если пройти какой-то крутой онлайн-курс, то это решит все проблемы. Но они не берут в расчет, что лучшее обучение — это практика. </p>
+                            </a>
+                        </div>
+                        <div class="author-info">
+                            <div class="info-block">
+                                <div class="date-tag articles-list__date-tag">
+                                    <span class="date date_grey">7 октября</span>
+                                </div>
+                                <a class="comment-tag articles-list__comment-tag">
+                                        <svg class="icon icon_comment_dark">
+                                            <use xlink:href="assets/icons/sprite.svg#Comment"></use>
+                                        </svg>
+                                    <span class="comment-count comment-count_grey">27</span>
+                                </a>
+                                <a class="like-tag">
+                                        <svg class="icon icon_heart_dark">
+                                            <use xlink:href="assets/icons/sprite.svg#Heart"></use>
+                                        </svg>
+                                    <span class="like-count like-count_grey">129</span>
+                                </a> 
+                            </div>
+                        </div>               
+                    </div>
+                </div>
+                <div class="articles-list__article-preview article-preview">
+                    <a href="article.html" class="link-wrapper_center">
+                        <img src="assets/images/block8.jpg" alt="image" class="articles-list__image"  loading="lazy">
+                    </a>
+                    <div class="articles-list__content-block">
+                        <div class="articles-list__content content">
+                            <div class="content__top">
+                                <a class="link-wrapper">
+                                    <span class="articles-list__category category category_red-75">Горячее</span>
+                                </a>
+                                <a class="link-wrapper_center">
+                                    <svg class="icon icon_bookmark_small icon_bookmark">
+                                        <use xlink:href="assets/icons/sprite.svg#Bookmark"></use>
+                                    </svg>
+                                </a>                               
+                            </div> 
+                            <a href="article.html" class="link-wrapper">
+                                <h4 class="articles-list__title title_headline-4 title_cut-2">Из-за ограничений стали недоступны серверы Telegram. К чему это может... </h4>
+                            </a>
+                            <a href="article.html" class="link-wrapper">
+                                <p class="articles-list__description description_cut-3">Сегодня мы узнали, что серверы Telegram не доступны на территории России. Разобрались, чем это грозит вам, если ваш бизнес зависит от этого мессенджера. </p>
+                            </a>
+                        </div>
+                        <div class="info-block">
+                            <div class="date-tag articles-list__date-tag">
+                                <span class="date date_grey">12 декабря</span>
+                            </div>
+                            <a class="comment-tag articles-list__comment-tag">
+                                    <svg class="icon icon_comment_dark">
+                                        <use xlink:href="assets/icons/sprite.svg#Comment"></use>
+                                    </svg>
+                                <span class="comment-count comment-count_grey">30</span>
+                            </a>
+                            <a class="like-tag">
+                                    <svg class="icon icon_heart_dark">
+                                        <use xlink:href="assets/icons/sprite.svg#Heart"></use>
+                                    </svg>
+                                <span class="like-count like-count_grey">284</span>
+                            </a> 
+                        </div>              
+                    </div>
+                </div>
+                <div class="articles-list__article-preview article-preview">
+                    <a href="article.html" class="link-wrapper_center">
+                        <img src="assets/images/block9.jpg" alt="image" class="articles-list__image"  loading="lazy">
+                    </a>
+                    <div class="articles-list__content-block">
+                        <div class="articles-list__content content">
+                            <div class="content__top">
+                                <a class="link-wrapper">
+                                    <span class="articles-list__category category category_bluegreen-75">Мнения</span>
+                                </a>
+                                <a class="link-wrapper_center">
+                                    <svg class="icon icon_bookmark_small icon_bookmark">
+                                        <use xlink:href="assets/icons/sprite.svg#Bookmark"></use>
+                                    </svg>
+                                </a>                               
+                            </div>
+                            <a href="article.html" class="link-wrapper">
+                                <h4 class="articles-list__title title_headline-4 title_cut-2">В вашем портфолио могут быть фейковые проекты, если вы сделали...</h4>
+                            </a>
+                            <a href="article.html" class="link-wrapper">
+                                <p class="articles-list__description description_cut-3">Один из читателей предположил, что если в портфолио положить несуществующий проект, то ничего страшного не произойдет. Он провел эксперимент и потенциальные заказчики... </p>
+                            </a>
+                        </div> 
+                            <div class="info-block">
+                                <div class="date-tag articles-list__date-tag">
+                                    <span class="date date_grey">20 июля</span>
+                                </div>
+                                <a class="comment-tag articles-list__comment-tag">
+                                        <svg class="icon icon_comment_dark">
+                                            <use xlink:href="assets/icons/sprite.svg#Comment"></use>
+                                        </svg>
+                                    <span class="comment-count comment-count_grey">102</span>
+                                </a>
+                                <a class="like-tag">
+                                        <svg class="icon icon_heart_dark">
+                                            <use xlink:href="assets/icons/sprite.svg#Heart"></use>
+                                        </svg>
+                                    <span class="like-count like-count_grey">1.293</span>
+                                </a> 
+                            </div>
+                    </div>
+                </div>
+                <div class="articles-list__article-preview article-preview">
+                    <a href="article.html" class="link-wrapper_center">
+                        <img src="assets/images/block10.jpg" alt="image" class="articles-list__image"  loading="lazy">
+                    </a>
+                    <div class="articles-list__content-block">
+                        <div class="articles-list__content content">
+                            <div class="content__top">
+                                <a class="link-wrapper">
+                                    <span class="articles-list__category category category_red-75">Горячее</span>
+                                </a>
+                                <a class="link-wrapper_center">
+                                    <svg class="icon icon_bookmark_small icon_bookmark">
+                                        <use xlink:href="assets/icons/sprite.svg#Bookmark"></use>
+                                    </svg>
+                                </a>                                
+                            </div>
+                            <a href="article.html" class="link-wrapper">
+                                <h4 class="articles-list__title title_headline-4 title_cut-2">Список стран, куда можно улететь</h4>
+                            </a>
+                            <a href="article.html" class="link-wrapper">
+                                <p class="articles-list__description description_cut-3">Если вы приняли решение переехать в другую страну, чтобы найти там работу, сначала посмотрите на список стран, который мы подготовили для вас. Внутри важная информация про...</p>
+                            </a>
+                        </div>
+                            <div class="info-block">
+                                <div class="date-tag articles-list__date-tag">
+                                    <span class="date date_grey">22 октября</span>
+                                </div>
+                                <a class="comment-tag articles-list__comment-tag">
+                                        <svg class="icon icon_comment_dark">
+                                            <use xlink:href="assets/icons/sprite.svg#Comment"></use>
+                                        </svg>
+                                    <span class="comment-count comment-count_grey">5</span>
+                                    </a>
+                                <a class="like-tag">
+                                        <svg class="icon icon_heart_dark">
+                                            <use xlink:href="assets/icons/sprite.svg#Heart"></use>
+                                        </svg>
+                                    <span class="like-count like-count_grey">82</span>
+                                    </a> 
+                            </div>
+                    </div>
+                </div>
+                <div class="articles-list__article-preview article-preview">
+                    <a href="article.html" class="link-wrapper_center">
+                        <img src="assets/images/block11.jpg" alt="image" class="articles-list__image"  loading="lazy">
+                    </a>
+                    <div class="articles-list__content-block">
+                        <div class="articles-list__content content">
+                            <div class="content__top">
+                                <a class="link-wrapper">
+                                    <span class="articles-list__category category category_purple-25">Подборки</span>
+                                </a>
+                                <a class="link-wrapper_center">
+                                    <svg class="icon icon_bookmark_small icon_bookmark">
+                                        <use xlink:href="assets/icons/sprite.svg#Bookmark"></use>
+                                    </svg>
+                                </a>                                
+                            </div>
+                            <a href="article.html" class="link-wrapper">
+                                <h4 class="articles-list__title title_headline-4 title_cut-2">Список Youtube каналов для тех, кто только начинает изучать разработку</h4>
+                            </a>
+                            <a href="article.html" class="link-wrapper">
+                                <p class="articles-list__description description_cut-3">Мы собрали на одной странице кучу ссылок на полезные русскоязычные каналы, посвященные айти. Тут можно найти видеоуроки, лекции и бесплатные курсы. </p>
+                            </a>
+                        </div>
+                            <div class="info-block">
+                                <div class="date-tag articles-list__date-tag">
+                                    <span class="date date_grey">26 декабря</span>
+                                </div>
+                                <a class="comment-tag articles-list__comment-tag">
+                                        <svg class="icon icon_comment_dark">
+                                            <use xlink:href="assets/icons/sprite.svg#Comment"></use>
+                                        </svg>
+                                    <span class="comment-count comment-count_grey">101</span>
+                                    </a>
+                                <a class="like-tag">
+                                        <svg class="icon icon_heart_dark">
+                                            <use xlink:href="assets/icons/sprite.svg#Heart"></use>
+                                        </svg>
+                                    <span class="like-count like-count_grey">432</span>
+                                    </a> 
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="articles-list__recommendation recommendation">
+                    <span class="articles-list__title_headline-6-uppercase title_headline-6-uppercase">
+                        Недавно опубликовано 
+                    </span>
+                <div class="articles-list__blocks">
+                    <a href="article.html" class="link-wrapper">
+                        <div class="block articles-list__block" id="first-block">
+                            <img src="assets/images/1-1.jpg" alt="image" class="articles-list__image-block"  loading="lazy">
+                            <div class="block__content">
+                                <p class="block__text text_cut-2">Работа на удаленке, как это теперь</p>
+                            <div class="date-tag">
+                                <span class="date date_grey">15 минут назад</span>
+                            </div>
+                            </div>
+                        </div>
+                    </a>                    
+                    <a href="article.html" class="link-wrapper">
+                        <div class="block articles-list__block" id="second-block">
+                            <img src="assets/images/2-2.jpg" alt="image" class="articles-list__image-block"  loading="lazy">
+                            <div class="block__content">
+                                <p class="block__text text_cut-2">Для чего нужен Node.js и с чем...</p>
+                            <div class="date-tag">
+                                <span class="date date_grey">32 минуты назад</span>
+                            </div>
+                            </div>
+                        </div>
+                    </a>                    
+                    <a href="article.html" class="link-wrapper">
+                        <div class="block articles-list__block" id="third-block">
+                            <img src="assets/images/3-3.jpg" alt="image" class="articles-list__image-block"  loading="lazy">
+                            <div class="block__content">
+                                <p class="block__text text_cut-2">Работа в Google: собеседования и...</p>
+                            <div class="date-tag">
+                                <span class="date date_grey">38 минут назад</span>
+                            </div>
+                            </div>
+                        </div>
+                    </a>                
+                    <a href="article.html" class="link-wrapper">
+                        <div class="block articles-list__block" id="fourth-block">
+                            <img src="assets/images/4-4.jpg" alt="image" class="articles-list__image-block"  loading="lazy">
+                            <div class="block__content">
+                                <p class="block__text text_cut-2">Переезд в Нью Йорк для работы по...</p>
+                            <div class="date-tag">
+                                <span class="date date_grey">53 минуты назад</span>
+                            </div>
+                            </div>
+                        </div>
+                    </a>                    
+                    <a href="article.html" class="link-wrapper">
+                        <div class="block articles-list__block" id="fifth-block">
+                            <img src="assets/images/5-5.jpg" alt="image" class="articles-list__image-block"  loading="lazy">
+                            <div class="block__content">
+                                <p class="block__text text_cut-2">Почему родители против того, чтобы...</p>
+                            <div class="date-tag">
+                                <span class="date date_grey">1 час назад</span>
+                            </div>
+                            </div>
+                        </div>
+                    </a>                    
+                    <a href="article.html" class="link-wrapper">
+                        <div class="block articles-list__block" id="sixth-block">
+                            <img src="assets/images/6-6.jpg" alt="image" class="articles-list__image-block"  loading="lazy">
+                            <div class="block__content">
+                                <p class="block__text text_cut-2">Прокрастинация:  побороть отклады...</p>
+                            <div class="date-tag">
+                                <span class="date date_grey">1 час назад</span>
+                            </div>
+                            </div>
+                        </div>
+                    </a>                    
+                    <a href="article.html" class="link-wrapper">
+                        <div class="block articles-list__block" id="seventh-block">
+                            <img src="assets/images/7-7.jpg" alt="image" class="articles-list__image-block"  loading="lazy">
+                            <div class="block__content">
+                                <p class="block__text text_cut-2">Правки от заказчика могут быть...</p>
+                            <div class="date-tag">
+                                <span class="date date_grey">2 часа назад</span>
+                            </div>
+                            </div>
+                        </div>
+                    </a>                    
+                </div>
+                <a href="article.html" class="recommendation__button button">
+                    Read more 
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="articles-slider">
+        <div class="container articles-slider__container">
+            <div class="articles-slider__swiper-container swiper-container" id="slider">
+                <div class="swiper-wrapper"> 
+                    <div class="swiper-slide articles-slider__swiper-slide">
+                        <img src="assets/images/slider1.jpg" alt="slide" class="slider-image articles-slider__slider-image">
+                    </div>
+                    <div class="swiper-slide articles-slider__swiper-slide">
+                        <img src="assets/images/slider1.jpg" alt="slide" class="slider-image articles-slider__slider-image">
+                    </div>
+                    <div class="swiper-slide articles-slider__swiper-slide">
+                        <img src="assets/images/slider1.jpg" alt="slide" class="slider-image articles-slider__slider-image">
+                    </div>
+                    <div class="swiper-slide articles-slider__swiper-slide">
+                        <img src="assets/images/slider1.jpg" alt="slide" class="slider-image articles-slider__slider-image">
+                    </div>
+                </div>
+                <div class="slider articles-slider__slider">
+                    <div class="label articles-slider__label label_green">Горячее</div>
+                    <a class="link-wrapper">
+                        <div class="articles-slider__author-block author-block">
+                            <img src="assets/images/user3.jpg" alt="avatar" class="articles-slider__author-avatar author-avatar author-avatar_medium">
+                            <div class="articles-slider__author-info">
+                                <span class="author-name author-name_regular author-name_light">Оксана Пушкина</span>
+                                <span class="author-profession author-profession_regular author-profession_light">Фотограф</span>
+                            </div>
+                        </div>
+                    </a>                    
+                    <h2 class="articles-slider__title title_headline-2 headline-2_light">
+                        Выбор читателей: где удобнее работать фрилансеру                
+                    </h2>
+                    <a href="#" class="slider__button_blue button button_blue">
+                        <svg class="icon icon_images">
+                            <use xlink:href="assets/icons/sprite.svg#Images"></use>
+                        </svg>
+                        <span>Смотреть фото</span>
+                        <span class="articles-slider__images-count">26</span>
+                    </a>  
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="articles-slider__large-article large-article" id="large-article_second">
+                <div class="large-article__article-preview">
+                    <a class="link-wrapper">
+                        <span class="large-article__category category category_greyblue-75">Карьера</span>
+                    </a>
+                    <h3 class="large-article__title large-article__title_articles-slider title_headline-3 headline-3_dark">Вопросы на собеседовании для джуна</h3>
+                    <p class="large-article__description large-article__description_articles-slider">Каверзные и не очень вопросы, которых боятся новички, когда идут на собеседование</p>
+                </div>
+                <a href="article.html" class="articles-slider__button_blue button button_blue">
+                    <span>Читать далее</span>
+                    <svg class="icon icon_arrow">
+                        <use xlink:href="assets/icons/sprite.svg#Arrow"></use>
+                    </svg>
+                </a>    
+            </div>
+            <div class="articles-slider__small-article small-article small-article_light" id="small-article_seventh">
+                <div class="small-article__article-preview">
+                    <div class="small-article__article-preview-info">
+                        <a href="article.html" class="link-wrapper">
+                            <h5 class="small-article__title_headline-5 title_headline-5">Зарядка для глаз</h5>
+                        </a>
+                        <a href="article.html" class="link-wrapper">
+                            <p class="small-article__description description_cut-3">Эти несколько упражнений помогут сохранить зрение. Можно делать их даже если...</p>
+                        </a>
+                    </div>
+                    <div class="date-tag">
+                        <span class="date date_grey">14 октября</span>
+                    </div> 
+                </div> 
+            </div>
+            <div class="articles-slider__small-article small-article small-article_light" id="small-article_eighth">
+                <div class="small-article__article-preview">
+                    <div class="small-article__article-preview-info">
+                        <a href="article.html" class="link-wrapper">
+                            <h5 class="small-article__title_headline-5 title_headline-5">Топ плагинов jQuery</h5>
+                        </a>
+                        <a href="article.html" class="link-wrapper">
+                            <p class="small-article__description description_cut-3">Какие плагины помогут быстро создать галерею, выпадающие списки или окна</p>
+                        </a>
+                    </div>
+                    <div class="date-tag">
+                        <span class="date date_grey">15 октября</span>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container footer__container">
+            <h2 class="footer__title title_headline-2">Подпишитесь на нашу рассылку</h2>
+            <form action="send.php" method="POST" class="form form_subscription">
+                <div class="footer__input-wrapper">
+                    <input type="email" class="input input_subscription" name="email_subscription" placeholder="Email">
+                </div>
+                <button class="button_blue button_subscription button"><span>Подписаться</span> </button>
+            </form>
+            <div class="footer__nav">
+                <div class="nav-block nav-block_news">
+                    <a href="#" class="nav-block__title">Новости</a>
+                    <a href="#" class="nav-block__item">Обновления</a>
+                    <a href="#" class="nav-block__item">Экспресс</a>
+                    <a href="#" class="nav-block__item">Politics</a>
+                    <a href="#" class="nav-block__item">Solar Eclipse</a>
+                </div>
+                <div class="nav-block nav-block_articles">
+                    <a href="#" class="nav-block__title">Статьи</a>
+                    <a href="#" class="nav-block__item" translate="no">HTML</a>
+                    <a href="#" class="nav-block__item" translate="no">CSS</a>
+                    <a href="#" class="nav-block__item" translate="no">JavaScript</a>
+                    <a href="#" class="nav-block__item" translate="no">Web Design</a>
+                </div>
+                <div class="nav-block nav-block_video-lessons">
+                    <a href="#" class="nav-block__title">Видеоуроки</a>
+                    <a href="#" class="nav-block__item">Скринкасты</a>
+                    <a href="#" class="nav-block__item">Уроки</a>
+                    <a href="#" class="nav-block__item">Вебинары</a>
+                </div>
+                <div class="nav-block nav-block_courses">
+                    <a href="#" class="nav-block__title">Курсы</a>
+                    <a href="#" class="nav-block__item">Платные интенсивы</a>
+                    <a href="#" class="nav-block__item">Бесплатные стримы</a>
+                    <a href="#" class="nav-block__item">Мастер-классы</a>
+                    <a href="#" class="nav-block__item">Менторство</a>
+                    <a href="#" class="nav-block__item">Буткемпы</a>
+                </div>
+                <div class="nav-block nav-block_info">
+                    <a href="#" class="nav-block__title">Информация</a>
+                    <a href="#" class="nav-block__item">Политика данных</a>
+                    <a href="#" class="nav-block__item">Оферта сайта</a>
+                    <a href="#" class="nav-block__item">Реквизиты</a>
+                    <a href="#" class="nav-block__item">Контакты</a>
+                </div>
+                <div class="nav-block nav-block_categories">
+                    <a href="#" class="nav-block__title">Категории</a>
+                    <a href="#" class="nav-block__item">Популярное</a>
+                    <a href="#" class="nav-block__item">Горячее</a>
+                    <a href="#" class="nav-block__item">Подборки</a>
+                    <a href="#" class="nav-block__item">Мнения</a>
+                    <a href="#" class="nav-block__item">Карьера</a>
+                </div>
+            </div>
+            <div class="footer__links">
+                <a href="index.html" ><img src="assets/images/logo-blue.png" alt="logo" class="footer__logo"></a>
+                <div class="footer__info">
+                    <a class="title_headline-6-uppercase footer__title_headline-6-uppercase">Контакты</a>
+                    <a class="title_headline-6-uppercase footer__title_headline-6-uppercase">Работа у нас</a>
+                    <a  class="title_headline-6-uppercase footer__title_headline-6-uppercase">Реклама</a>
+                    <a  id="feedback" class="title_headline-6-uppercase footer__title_headline-6-uppercase">Обратная связь</a>
+                </div>
+                <div class="footer__social-links social-links">
+                    <a href="https://www.facebook.com/" class="footer__social-link social-link social-link_fb" target="_blank">
+                        <svg class="icon icon_facebook">
+                            <use xlink:href="assets/icons/sprite.svg#Facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/" class="footer__social-link social-link social-link_twit" target="_blank">
+                        <svg class="icon icon_twitter">
+                            <use xlink:href="assets/icons/sprite.svg#Twitter"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/" class="footer__social-link social-link social-link_yt" target="_blank">
+                        <svg class="icon icon_youtube">
+                            <use xlink:href="assets/icons/sprite.svg#YouTube"></use>
+                        </svg>
+                    </a> 
+                    <a href="https://www.instagram.com/" class="footer__social-link social-link social-link_inst" target="_blank">
+                        <svg class="icon icon_instagram">
+                            <use xlink:href="assets/icons/sprite.svg#Instagram"></use>
+                        </svg>
+                    </a> 
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p class="copyright-info">Universal — это онлайн издание, в котором мы публикуем полезные материалы о веб разработке: статьи, новости, видеоуроки, подборки, ссылки и курсы. Материалы на сайте бесплатны, но при копировании, указывайте ссылку.</p>
+                <p class="copyright-text" translate="no">© 2020 Universal Magazine</p>
+            </div>
+        </div>
+    </footer>
+    <div class="modal modal_hidden" id="modal_feedback">
+        <div class="modal-dialog modal-dialog_hidden" id="modal-dialog_feedback">
+            <svg class="icon icon_close" id="modal-close-feedback">
+                <use xlink:href="assets/icons/sprite.svg#Close"></use>
+            </svg>
+            <h4 class="modal__title title_headline-4">Обратная связь</h4>
+            <form action="send.php" method="POST" class="form_modal">
+                <div class="modal__input-wrapper modal__input-wrapper_theme">
+                    <label class="label-title">
+                        Тема<br>
+                        <select name="theme_feedback" class="select_modal">
+                            <option class="option_modal" value="">Выберите тему</option>
+                            <option class="option_modal" value="Тема 1">Тема 1</option>
+                            <option class="option_modal" value="Тема 2">Тема 2</option>
+                            <option class="option_modal" value="Тема 3">Тема 3</option>
+                            <option class="option_modal" value="Тема 4">Тема 4</option>
+                            <option class="option_modal" value="Тема 5">Тема 5</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="modal__input-wrapper modal__input-wrapper_message">
+                    <label class="label-title">Сообщение<br>
+                        <textarea name="message_feedback" class="textarea_modal"></textarea>
+                    </label>
+                </div>
+                <div class="modal__input-wrapper modal__input-wrapper_email">
+                    <label class="label-title">Email<br>
+                        <input type="email" name="email_feedback" class="input_modal">
+                    </label>
+                </div>
+                <div class="modal__input-wrapper_checkbox modal__input-wrapper">
+                    <label class="label-title_regular">
+                        <input type="checkbox" name="agreement_checkbox" checked class="checkbox_modal">Согласен с обработкой данных
+                    </label>
+                </div>               
+                <button type="submit" class="button modal__button_blue button_blue"><span>Отправить</span> </button>
+            </form>
+        </div>
+    </div>
+    <div class="button button_up" id="up">
+        <a href="#" class="link-wrapper_center">
+            <svg class="icon icon_arrow-up">
+                <use xlink:href="assets/icons/sprite.svg#ArrowPrev"></use>
+            </svg>
+        </a>
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/clamp.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

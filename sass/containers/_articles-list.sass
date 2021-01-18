@@ -1,0 +1,108 @@
+.articles-list
+    &__container
+        padding: 60px 0
+        display: flex
+        justify-content: space-between
+    &__list
+        flex-basis: 74.5%
+        border-radius: 10px
+        overflow: hidden
+    &__recommendation
+        flex-basis: 23%
+        height: min-content
+        height: min-content
+    &__article-preview
+        min-height: 245px
+        height: min-content
+        height: min-content
+        padding: 25px 25px 24px
+        background-color: $white
+        display: flex
+        width: 100%
+        justify-content: space-between
+        align-items: center
+        &:not(:last-child)
+            border-bottom: 1px solid $grey-15
+    &__image
+        width: 336px
+        height: 195px
+        object-fit: cover
+        margin-right: 25px
+        &-block
+            width: 60px
+            height: 60px
+            object-fit: cover
+            margin-right: 10px
+    &__content-block
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-start
+        min-height: 190px
+        width: 100%
+    &__content
+        margin-bottom: 10px
+    &__title
+        margin-bottom: 10px
+        color: $grey-100
+    &__blocks
+        padding: 0 25px
+        border-bottom: 1px solid $grey-15
+        border-top: 1px solid $grey-15
+    &__block
+        display: flex
+        align-items: center
+        padding: 17px 0
+        border-top: 1px solid $grey-15
+    &__description
+        @include medium-regular-text
+        color: $grey-85
+        margin: 0
+    &__date-tag
+        margin-right: 10px
+    &__comment-tag
+        margin-right: 10px
+    &__title_headline-6-uppercase
+        padding: 20px 25px
+        background-color: $white
+        text-align: center
+.block
+    &__text
+        @include medium-regular-text
+        color: $grey-85
+        margin-bottom: 5px
+.content__top
+    display: flex
+    width: 100%
+    justify-content: space-between   
+    align-items: flex-end 
+    margin-bottom: 15px
+#first-block
+    background-image: url(../assets/images/1.png)
+    background-repeat: no-repeat
+    background-position: center right
+    border-top: none
+#second-block
+    background-image: url(../assets/images/2.png)
+    background-repeat: no-repeat
+    background-position: center right
+#third-block
+    background-image: url(../assets/images/3.png)
+    background-repeat: no-repeat
+    background-position: center right
+#fourth-block
+    background-image: url(../assets/images/4.png)
+    background-repeat: no-repeat
+    background-position: center right
+#fifth-block
+    background-image: url(../assets/images/5.png)
+    background-repeat: no-repeat
+    background-position: center right
+#sixth-block
+    background-image: url(../assets/images/6.png)
+    background-repeat: no-repeat
+    background-position: center right
+#seventh-block
+    background-image: url(../assets/images/7.png)
+    background-repeat: no-repeat
+    background-position: center right

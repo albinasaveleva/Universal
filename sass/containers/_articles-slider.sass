@@ -1,0 +1,108 @@
+.articles-slider
+    background-color: $grey-100
+    &__container
+        padding: 60px 0
+        display: grid
+        grid-gap: 30px
+        grid-template: repeat(3, minmax(min-content, 1fr)) / repeat(4, 1fr)
+    &__large-article
+        background-color: $greyblue-50
+        background-image: url(../assets/images/Image.png)
+        background-repeat: no-repeat
+        background-position: top right
+        justify-content: flex-start
+        padding-bottom: 35px
+    &__slider-image
+        height: 100%
+        width: 100%
+        object-fit: cover
+        border-radius: 10px
+        overflow: hidden
+
+    &__slider
+        padding: 18px
+        display: flex
+        flex-direction: column
+        align-items: center
+        border-radius: 10px
+        overflow: hidden
+        height: 100%
+        width: 100%
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        z-index: 3
+    &__label
+        margin-bottom: 8px
+        margin-right: auto
+    &__author-block
+        flex-direction: column
+        margin: 0 auto
+        margin-bottom: 32px
+    &__author-info
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__author-avatar
+        margin-right: 0
+        margin-bottom: 8px
+    &__title
+        max-width: 455px
+        margin: 0 auto
+        margin-bottom: 45px
+        text-align: center
+    &__img_read-more
+        margin-right: 8px
+        margin-left: 0
+    &__button_blue
+        margin-left: 35px
+        margin-right: auto
+    &__swiper-container
+        width: 100%
+        height: auto
+        position: relative
+    &__swiper-slide
+        border-radius: 10px
+        overflow: hidden
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            top: 0
+            right: 0
+            bottom: 0
+            left: 0
+            border-radius: 10px
+            overflow: hidden
+            background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+span.articles-slider__images-count
+    margin-left: 8px
+.large-article__title_articles-slider
+    margin-bottom: 15px   
+.large-article__description_articles-slider
+    margin-bottom: 45px 
+.slider
+    &__button_blue
+        align-self: center
+.articles-slider__swiper-container 
+    grid-row-start: 1
+    grid-row-end: 4
+    grid-column-start: 1
+    grid-column-end: 3
+#large-article_second
+    grid-row-start: 1
+    grid-row-end: 3
+    grid-column-start: 3
+    grid-column-end: 5
+#small-article_seventh
+    grid-row-start: 3
+    grid-row-end: 4
+    grid-column-start: 3
+    grid-column-end: 4
+#small-article_eighth
+    grid-row-start: 3
+    grid-row-end: 4
+    grid-column-start: 4
+    grid-column-end: 5
